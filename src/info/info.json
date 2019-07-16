@@ -1,0 +1,17 @@
+{
+  "name": "Josh Nassif",
+  "title": "AWS Certified Developer",
+  "specializiations": "Python, JavaScript, R, MySQL",
+  "skillOne": "Interactive Python development",
+  "skillTwo": "Responsive web design with React",
+  "skillThree": "Amazon Web Service implementation",
+  "introduction": "A brief introduction will go here.",
+  "projectOne": "Arbitrage Finder",
+  "projectTwo": "Resturant Order Interface",
+  "projectThree": "Lineup Optimizer",
+  "projectOneDescription": "Pulls and analyzes data from the web to find profitable oppourtunities in a variety of markets. The program combines and cleans data from multiple sources then compares it to find arbitrage and value opportunities. Optionally functonality to send email alerts.",
+  "projectTwoDescription": "Complete custimizable order system for a restaurant. Employees can log in with assigned PIN and enter orders for tables and guests. Orders are saved in MySQL database which can be used to send orders to either kitchen or bar and be provide information to management.",
+  "projectThreeDescription": "Uses solver to find optimal solutions for daily fantasy sports lineups. Includes rules to ensure all lineups fall within site contraints. Options to remove individual players and teams. Easily custimizable.",
+  "linkedIn": "https://www.linkedin.com/in/joshnassif/",
+  "github": "https://www.github.com/JoshNas/"
+}
