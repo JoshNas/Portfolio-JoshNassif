@@ -20,6 +20,20 @@
 	color:#DAE9F8;
 }
 
+/*Background images (Non-Parallax)*/
+.intro-bg {
+	background-image: url('./img/background.jpg');
+	min-height: 600px;
+	height: 100%;
+
+
+
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 /* Header Parallax Element Style*/
 .paral {
 min-height: 600px;
@@ -55,6 +69,8 @@ color: rgba(255, 255, 255, 0.8);
 /* Image for Parallax Section */
 .paralsec {
 background-image: url('./img/background.jpg');
+
+
 }
 
 .paralsec1 {

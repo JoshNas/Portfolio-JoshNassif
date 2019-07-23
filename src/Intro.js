@@ -6,7 +6,7 @@ import "./style.css"
 export class Intro extends Component{
   render() {
     return (
-      <div class="jumbotron paral paralsec" id="intro">
+      <div class="jumbotron intro-bg" id="intro">
         <div class="container text-center">
           <h1 class="display-3 text-dark">My Portfolio</h1>
           <h3 class="lead">{info.introduction}</h3>
@@ -19,6 +19,7 @@ export class Intro extends Component{
             </a>
 
           </btn-toolbar>
+
         </div>
       </div>
     )
