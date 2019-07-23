@@ -7,6 +7,10 @@ export class Intro extends Component{
   render() {
     return (
       <div class="jumbotron jumbotron-fluid intro-bg" id="intro">
+        <br />
+        <br />
+        <br />
+        <br />
         <div class="container text-center">
           <h1 class="display-3 text-dark">My Portfolio</h1>
           <h3 class="lead">{info.introduction}</h3>
