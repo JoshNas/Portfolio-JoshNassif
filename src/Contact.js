@@ -47,7 +47,7 @@ export class ContactForm extends React.Component {
 
  render() {
   return(
-    <div className="jumbotron paral paralsec2" id="contact">
+    <div className="jumbotron jumbotron-fluid paral paralsec2" id="contact">
       <form className='react-form' onSubmit={this.handleSubmit}>
        <h1 id='formTitle'>Contact</h1>
 

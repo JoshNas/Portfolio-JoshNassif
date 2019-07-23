@@ -31,7 +31,7 @@ changeBackground () {
 
   render() {
     return (
-      <div className="jumbotron paral" id="about" style={this.state.originalBackground ? background1 : background2} onClick={this.changeBackground.bind(this)}>
+      <div className="jumbotron jumbotron-fluid paral" id="about" style={this.state.originalBackground ? background1 : background2} onClick={this.changeBackground.bind(this)}>
         <div className="container text-center">
           <h1 className="display-2">{info.name}</h1>
           <img src={profilepic} className="rounded-circle" alt="profile" />
