@@ -6,7 +6,7 @@
   "skillTwo": "Responsive web design with React",
   "skillThree": "Amazon Web Service implementation",
   "introduction": "A brief introduction will go here.",
-  "projectOne": "Arbitrage Finder",
+  "projectOne": "Testing changes",
   "projectTwo": "Resturant Order Interface",
   "projectThree": "Lineup Optimizer",
   "projectOneDescription": "Pulls and analyzes data from the web to find profitable oppourtunities in a variety of markets. The program combines and cleans data from multiple sources then compares it to find arbitrage and value opportunities. Optionally functonality to send email alerts.",
