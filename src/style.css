@@ -80,10 +80,10 @@ background-image: url('./img/background2.jpg');}
 background-image: url('./img/background3.jpg');
 }
 
-/* Add more images for more sections */
-
-/* Remove Bottom Margin from Jumbotron */
-/* .jumbotron{margin-bottom: 0;} */
+/* Contact Form */
+#formTitle {
+	color: black;
+}
 
 /* Footer */
 .wn-footer {
