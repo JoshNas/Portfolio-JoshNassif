@@ -2,7 +2,7 @@
   "name": "react-tutorial",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://joshnas.github.io/Portfolio-JoshNassif/",
+  "homepage": "https://joshnas.github.io/Portfolio/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "lodash": "^4.17.14",
