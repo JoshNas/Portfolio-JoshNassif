@@ -11,9 +11,10 @@ import projectThreeBig3 from './img/projectThreeBig3.png'
 
 export const Project3 = () => (
   <div className="container">
-    <p class="lead"></p>
+    <h3 className="col text-center">{info.projectThree}</h3>
+    <p className="col text-center lead">{info.projectThreeDescription}</p>
+    <p className="col text-center lead">{info.projectThreeDetails}</p>
     <div class="row" >
-    <p className="lead">{info.projectThreeDetails}</p>
       <div className="col-md-4">
         <ModalImage small={projectThree1} large={projectThreeBig1} className="projectImage"/>
       </div>

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Navbar } from './Navbar'
 import { Intro } from './Intro'
 import { About } from './About'
-import { Projects } from './Projects'
+import { ProjectManager } from './ProjectManager'
 import { Social } from './Social'
 import { ContactForm } from './Contact'
 
@@ -14,7 +14,7 @@ export class App extends Component {
         <Navbar />
         <Intro />
         <About />
-        <Projects />
+        <ProjectManager />
         <ContactForm />
         <Social />
 
