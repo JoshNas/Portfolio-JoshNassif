@@ -6,13 +6,19 @@ import { Project1 } from "./Project1"
 import { Project2 } from "./Project2"
 import { Project3 } from "./Project3"
 
+
+
 export class Projects extends Component{
   constructor () {
     super()
     this.state = {oneIsHidden: true, twoIsHidden: true, threeIsHidden: true,
     buttonOneText: 'Learn More', buttonTwoText: 'Learn More', buttonThreeText: 'Learn More',
     oneIsFocus: false, twoIsFocus: false, threeIsFocus: false}
+    this.topRef = React.createRef()
+    this.focusedRef = React.createRef()
+
   }
+
 
   toggleHiddenOne () {
     this.setState({
@@ -25,12 +31,15 @@ export class Projects extends Component{
         this.setState({
           buttonOneText: "Collapse"
         })
+        this.focusedRef.current.scrollIntoView()
         break;
       default:
         this.setState({
           buttonOneText: "Learn More"
         })
+        this.topRef.current.scrollIntoView()
     }
+
   }
 
   toggleHiddenTwo () {
@@ -44,11 +53,13 @@ export class Projects extends Component{
         this.setState({
           buttonTwoText: "Collapse"
         })
+        this.focusedRef.current.scrollIntoView()
         break;
       default:
         this.setState({
           buttonTwoText: "Learn More"
         })
+        this.topRef.current.scrollIntoView()
     }
   }
 
@@ -63,51 +74,51 @@ export class Projects extends Component{
         this.setState({
           buttonThreeText: "Collapse"
         })
+        this.focusedRef.current.scrollIntoView()
         break;
       default:
         this.setState({
           buttonThreeText: "Learn More"
         })
+        this.topRef.current.scrollIntoView()
     }
   }
 
+
+
   render() {
     return (
-      <div className="jumbotron jumbotron-fluid" id="projects">
+      <div className="jumbotron jumbotron-fluid" id="projects" ref={this.topRef}>
         <div className="container text-center">
           <div className="row">
             <div className="col-lg-4">
               <h3 className={this.state.oneIsFocus ? "emphasized" : "normal"} id="project1">{info.projectOne}</h3>
               <p>{info.projectOneDescription}</p>
-              <a  href="#focusedProject">
-                <button onClick={this.toggleHiddenOne.bind(this)} className="btn btn-default btn-lg">
-                            {this.state.buttonOneText}
-                </button>
-              </a>
+              <button onClick={this.toggleHiddenOne.bind(this)} className="btn btn-default btn-lg">
+                          {this.state.buttonOneText}
+              </button>
+
 
             </div>
             <div className="col-lg-4">
               <h3 className={this.state.twoIsFocus ? "emphasized" : "normal"}>{info.projectTwo}</h3>
               <p>{info.projectTwoDescription}</p>
-              <a href="#focusedProject">
-                <button onClick={this.toggleHiddenTwo.bind(this)} className="btn btn-default btn-lg">
-                  {this.state.buttonTwoText}
-                </button>
-              </a>
+              <button onClick={this.toggleHiddenTwo.bind(this)} className="btn btn-default btn-lg">
+                {this.state.buttonTwoText}
+              </button>
 
             </div>
             <div className="col-lg-4">
               <h3 className={this.state.threeIsFocus ? "emphasized" : "normal"}>{info.projectThree}</h3>
               <p>{info.projectThreeDescription}</p>
-              <a  href="#focusedProject">
-                <button onClick={this.toggleHiddenThree.bind(this)} className="btn btn-default btn-lg">
-                  {this.state.buttonThreeText}
-                </button>
-              </a>
+              <button onClick={this.toggleHiddenThree.bind(this)} className="btn btn-default btn-lg">
+                {this.state.buttonThreeText}
+              </button>
+
             </div>
           </div>
-          <div id='hi'></div>
-          <div id="focusedProject">
+          <div id='hi' ></div>
+          <div id="focusedProject" ref={this.focusedRef}>
             {!this.state.oneIsHidden && <Project1 />}
             {!this.state.twoIsHidden && <Project2 />}
             {!this.state.threeIsHidden && <Project3 />}

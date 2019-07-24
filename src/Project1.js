@@ -13,7 +13,7 @@ export const Project1 = () => (
   <div className="container">
     <p class="lead"></p>
     <div class="row" >
-      <p className="lead">Pulls and analyzes data from the web to find profitable oppourtunities in a variety of markets. The program combines and cleans data from multiple sources then compares it to find arbitrage and value opportunities. Optionally functonality to send email alerts.Pulls and analyzes data from the web to find profitable oppourtunities in a variety of markets. The program combines and cleans data from multiple sources then compares it to find arbitrage and value opportunities. Optionally functonality to send email alerts.</p>
+      <p className="lead">{info.projectOneDetails}</p>
       <div className="col-md-4">
         <ModalImage small={projectOne1} large={projectOneBig1} className="projectImage"/>
       </div>
