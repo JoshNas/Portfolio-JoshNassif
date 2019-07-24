@@ -1,7 +1,7 @@
 import React, { Component} from 'react'
 import profilepic from './img/profile.jpg'
 import info from './info/info'
-import "./style.css"
+import "./style.css";
 import background from './img/background2.jpg'
 import backgroundAlt from './img/background2Alt.gif'
 
@@ -33,13 +33,13 @@ changeBackground () {
     return (
       <div className="jumbotron jumbotron-fluid paral" id="about" style={this.state.originalBackground ? background1 : background2} onClick={this.changeBackground.bind(this)}>
         <div className="container text-center">
-          <h1 className="display-2">{info.name}</h1>
+          <h1 className="display-3">{info.name}</h1>
           <img src={profilepic} className="rounded-circle img-fluid" alt="profile" />
-          <h1 class="display-2">{info.title}</h1>
-          <h2 class="display-3">{info.specializiations}</h2>
-          <p class="display-5">{info.skillOne}</p>
-          <p onClick={this.changeBackground.bind(this)} class="display-5 clickp">{info.skillTwo}</p>
-          <p class="display-5">{info.skillThree}</p>
+          <h1 className="display-4">{info.title}</h1>
+          <h2 className="display-4">{info.specializiations}</h2>
+          <p className="lead">{info.skillOne}</p>
+          <p onClick={this.changeBackground.bind(this)} className="lead">{info.skillTwo}</p>
+          <p className="lead">{info.skillThree}</p>
         </div>
       </div>
     )

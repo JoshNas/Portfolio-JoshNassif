@@ -9,11 +9,6 @@
 	font-size: 40px;
 }
 
-.display-5 {
-  font-size: $display4-size * .75;
-  font-weight: $display4-weight * .75;
-  line-height: $display-line-height;
-}
 
 .clickp:hover {
 	cursor: pointer;
@@ -25,9 +20,6 @@
 	background-image: url('./img/background.jpg');
 	min-height: 600px;
 	height: 100%;
-
-
-
 	/* Center and scale the image nicely */
 	background-position: center;
 	background-repeat: no-repeat;
@@ -44,7 +36,6 @@ background-position: 50% 50%;
 
 /* Paragrapgh for Parallax Section */
 .paral p {
-font-size: 24px;
 color:#f5f5f5;
 text-align: center;
 line-height: 60px;
@@ -58,19 +49,10 @@ color: rgba(255, 255, 255, 1);
 .paral h2 {
 color: rgba(255, 255, 255, 1);
 }
-/* .paral h1 {
-color: rgba(255, 255, 255, 0.8);
-}
-
-.paral h2 {
-color: rgba(255, 255, 255, 0.8);
-} */
 
 /* Image for Parallax Section */
 .paralsec {
 background-image: url('./img/background.jpg');
-
-
 }
 
 .paralsec1 {

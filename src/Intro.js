@@ -7,10 +7,6 @@ export class Intro extends Component{
   render() {
     return (
       <div class="jumbotron jumbotron-fluid intro-bg" id="intro">
-        <br />
-        <br />
-        <br />
-        <br />
         <div class="container text-center">
           <h1 class="display-3 text-dark">My Portfolio</h1>
           <h3 class="lead">{info.introduction}</h3>
@@ -21,9 +17,7 @@ export class Intro extends Component{
             <a href="#contact">
               <button type="button" class="btn btn-info ml-1">Contact Me</button>
             </a>
-
           </btn-toolbar>
-
         </div>
       </div>
     )

@@ -79,7 +79,7 @@ export class Projects extends Component{
             <div className="col-lg-4">
               <h3 className={this.state.oneIsFocus ? "emphasized" : "normal"} id="project1">{info.projectOne}</h3>
               <p>{info.projectOneDescription}</p>
-              <a href="#projects">
+              <a  href="#focusedProject">
                 <button onClick={this.toggleHiddenOne.bind(this)} className="btn btn-default btn-lg">
                             {this.state.buttonOneText}
                 </button>
@@ -89,7 +89,7 @@ export class Projects extends Component{
             <div className="col-lg-4">
               <h3 className={this.state.twoIsFocus ? "emphasized" : "normal"}>{info.projectTwo}</h3>
               <p>{info.projectTwoDescription}</p>
-              <a href="#projects">
+              <a href="#focusedProject">
                 <button onClick={this.toggleHiddenTwo.bind(this)} className="btn btn-default btn-lg">
                   {this.state.buttonTwoText}
                 </button>
@@ -99,13 +99,14 @@ export class Projects extends Component{
             <div className="col-lg-4">
               <h3 className={this.state.threeIsFocus ? "emphasized" : "normal"}>{info.projectThree}</h3>
               <p>{info.projectThreeDescription}</p>
-              <a href="#projects">
+              <a  href="#focusedProject">
                 <button onClick={this.toggleHiddenThree.bind(this)} className="btn btn-default btn-lg">
                   {this.state.buttonThreeText}
                 </button>
               </a>
             </div>
           </div>
+          <div id='hi'></div>
           <div id="focusedProject">
             {!this.state.oneIsHidden && <Project1 />}
             {!this.state.twoIsHidden && <Project2 />}
