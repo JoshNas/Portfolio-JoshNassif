@@ -25,5 +25,10 @@ export const Project2 = () => (
         <ModalImage small={projectTwo3} large={projectTwoBig3} className="projectImage"/>
       </div>
     </div>
+    <div className="container text-center">
+      <a className="btn btn-social btn-github" href="https://github.com/JoshNas/Resturant" target="blank">
+        <span className="fa fa-github"></span> GitHub
+      </a>
+    </div>
   </div>
 )

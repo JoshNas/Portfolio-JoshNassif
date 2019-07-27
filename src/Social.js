@@ -1,11 +1,9 @@
-import React, { Component} from 'react'
+import React from 'react'
 import info from "./info/info"
 
-export class Social extends Component{
-  render() {
-    return(
-      <div className="container">
-        <div className="row" id="social-links">
+export const Social = () => (
+      <div className="container text-center" id="social-links">
+        <div className="row" >
           <div className="container">
             <a type="button" className="btn btn-social btn-linkedin" href={info.linkedIn} target="blank">
               <span className="fa fa-linkedin"></span> LinkedIn
@@ -18,5 +16,3 @@ export class Social extends Component{
         </div>
       </div>
     )
-  }
-}

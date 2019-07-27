@@ -4,6 +4,7 @@ import info from './info/info'
 import { Project1 } from "./Project1"
 import { Project2 } from "./Project2"
 import { Project3 } from "./Project3"
+import { Social } from "./Social"
 
 
 export class ProjectManager extends Component{
@@ -85,6 +86,8 @@ export class ProjectManager extends Component{
         {this.state.displayThree && <Project3 />}
 
         <div className="col text-center"><button className="btn btn-default btn-lg" onClick={this.toggleMain.bind(this)} hidden={this.state.learnMore}>Back</button></div>
+        {this.state.displayMain && <Social />}
+
       </div>
     )
   }
