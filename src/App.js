@@ -3,8 +3,8 @@ import { Navbar } from './Navbar'
 import { Intro } from './Intro'
 import { About } from './About'
 import { ProjectManager } from './ProjectManager'
-import { Social } from './Social'
 import { ContactForm } from './Contact'
+import { Footer } from './Footer'
 
 
 export class App extends Component {
@@ -16,7 +16,7 @@ export class App extends Component {
         <About />
         <ProjectManager />
         <ContactForm />
-        <Social />
+        <Footer />
 
       </div>
 

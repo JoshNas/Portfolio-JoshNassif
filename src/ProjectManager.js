@@ -4,8 +4,6 @@ import info from './info/info'
 import { Project1 } from "./Project1"
 import { Project2 } from "./Project2"
 import { Project3 } from "./Project3"
-import { ProjectsAll} from "./ProjectsAll"
-
 
 
 export class ProjectManager extends Component{
@@ -71,13 +69,13 @@ export class ProjectManager extends Component{
             <div className="col-lg-4">
               <h3>{info.projectTwo}</h3>
               <p>{info.projectTwoDescription}</p>
-              <button className="btn btn-default btn-lg" onClick={this.toggleOne.bind(this)}>Learn More</button>
+              <button className="btn btn-default btn-lg" onClick={this.toggleTwo.bind(this)}>Learn More</button>
             </div>
 
             <div className="col-lg-4">
               <h3>{info.projectThree}</h3>
               <p>{info.projectThreeDescription}</p>
-              <button className="btn btn-default btn-lg" onClick={this.toggleOne.bind(this)}>Learn More</button>
+              <button className="btn btn-default btn-lg" onClick={this.toggleThree.bind(this)}>Learn More</button>
             </div>
           </div>
         </div>

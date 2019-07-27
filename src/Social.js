@@ -15,7 +15,6 @@ export class Social extends Component{
               <span className="fa fa-github"></span> GitHub
             </a>
           </div>
-          <p></p>
         </div>
       </div>
     )
