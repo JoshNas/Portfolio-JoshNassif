@@ -61,19 +61,19 @@ export class ProjectManager extends Component{
         <div className="container text-center" hidden={!this.state.displayMain}>
           <div className="row">
 
-            <div className="col-lg-4" id="learnMore">
+            <div className="col-lg-4" id="learn-more">
               <h3 id="project1">{info.projectOne}</h3>
               <p>{info.projectOneDescription}</p>
-              <button className="btn btn-info"  onClick={this.toggleOne.bind(this)}>Learn More</button>
+              <button className="btn btn-info" onClick={this.toggleOne.bind(this)}>Learn More</button>
             </div>
 
-            <div className="col-lg-4">
+            <div className="col-lg-4" id="learn-more">
               <h3>{info.projectTwo}</h3>
               <p>{info.projectTwoDescription}</p>
               <button className="btn btn-info" onClick={this.toggleTwo.bind(this)}>Learn More</button>
             </div>
 
-            <div className="col-lg-4">
+            <div className="col-lg-4" id="learn-more">
               <h3>{info.projectThree}</h3>
               <p>{info.projectThreeDescription}</p>
               <button className="btn btn-info" onClick={this.toggleThree.bind(this)}>Learn More</button>

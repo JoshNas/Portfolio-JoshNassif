@@ -27,7 +27,7 @@ export const Project3 = () => (
     </div>
     <div className="container text-center">
       <a className="btn btn-social btn-github" href="https://github.com/JoshNas/DFB" target="blank">
-        <span className="fa fa-github"></span> GitHub
+        <span className="fa fa-github"  id="social-but"></span> GitHub
       </a>
     </div>
   </div>
