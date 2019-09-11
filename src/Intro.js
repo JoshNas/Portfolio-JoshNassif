@@ -8,7 +8,7 @@ export class Intro extends Component{
     return (
       <div class="jumbotron jumbotron-fluid intro-bg" id="intro">
         <div class="container text-center">
-          <h1 class="display-3 text-dark">My Portfolio</h1>
+          <h1 class="display-3 text-dark">{info.name}</h1>
           <h3 class="lead">{info.introduction}</h3>
           <btn-toolbar>
             <a href="/resources/yourcsv.txt" download>

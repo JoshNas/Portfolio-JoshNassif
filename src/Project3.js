@@ -9,10 +9,11 @@ import projectThreeBig1 from './img/projectThreeBig1.png'
 import projectThreeBig2 from './img/projectThreeBig2.png'
 import projectThreeBig3 from './img/projectThreeBig3.png'
 
+
+
 export const Project3 = () => (
   <div className="container">
     <h3 className="col text-center">{info.projectThree}</h3>
-    <p className="col text-center lead">{info.projectThreeDescription}</p>
     <p className="col text-center lead">{info.projectThreeDetails}</p>
     <div class="row" >
       <div className="col-md-4">
@@ -26,9 +27,26 @@ export const Project3 = () => (
       </div>
     </div>
     <div className="container text-center">
-      <a className="btn btn-social btn-github" href="https://github.com/JoshNas/DFB" target="blank">
+      <a className="btn btn-social btn-github" data-toggle="modal" data-target=".demo-popup">
         <span className="fa fa-github"  id="social-but"></span> GitHub
       </a>
     </div>
+
+      {/* Modal popup */}
+      <div class="modal fade demo-popup" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+            <p>This repository is not available publicly. If you're considering hiring me and would like more information on how the application works please contact me. Thanks!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Modal popup */}
+
+
   </div>
 )

@@ -12,7 +12,6 @@ import projectTwoBig3 from './img/projectTwoBig3.png'
 export const Project2 = () => (
   <div className="container">
     <h3 className="col text-center">{info.projectTwo}</h3>
-    <p className="col text-center lead">{info.projectTwoDescription}</p>
     <p className="col text-center lead">{info.projectTwoDetails}</p>
     <div class="row" >
       <div className="col-md-4">

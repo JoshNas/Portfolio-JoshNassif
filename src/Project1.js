@@ -12,7 +12,6 @@ import projectOneBig3 from './img/projectOneBig3.png'
 export const Project1 = () => (
   <div className="container">
     <h3 className="col text-center" id="project1">{info.projectOne}</h3>
-    <p className="col text-center lead">{info.projectOneDescription}</p>
     <p className="col text-center lead">{info.projectOneDetails}</p>
     <div class="row" >
       <div className="col-md-4">
@@ -26,7 +25,7 @@ export const Project1 = () => (
       </div>
     </div>
     <div className="container text-center">
-      <a className="btn btn-social btn-github" href="https://github.com/JoshNas/ArbFinderNew" target="blank">
+      <a className="btn btn-social btn-github" href="https://github.com/JoshNas/Arb" target="blank">
         <span className="fa fa-github"  id="social-but"></span> GitHub
       </a>
     </div>

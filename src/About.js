@@ -1,5 +1,6 @@
 import React, { Component} from 'react'
 import profilepic from './img/profile.jpg'
+import profilepicalt from './img/profileCool.jpg'
 import info from './info/info'
 import "./style.css";
 import background from './img/background2.jpg'
@@ -14,14 +15,12 @@ const background2 = {
 }
 
 
-
-
 export class About extends Component {
   constructor() {
     super()
-
     this.state = {
-      originalBackground: true
+      originalBackground: true,
+      originalProfile: true
     }
   }
 
@@ -31,12 +30,17 @@ export class About extends Component {
     })
   }
 
+  changeProfile () {
+    this.setState({
+      originalProfile: !this.state.originalProfile
+    })
+  }
+
   render() {
     return (
       <div className="jumbotron jumbotron-fluid paral" id="about" style={this.state.originalBackground ? background1 : background2} onClick={this.changeBackground.bind(this)}>
         <div className="container text-center">
-          <h1 className="display-3">{info.name}</h1>
-          <img src={profilepic} className="rounded-circle img-fluid" alt="profile" />
+          <img src={this.state.originalProfile ? profilepic : profilepicalt} onClick={this.changeProfile.bind(this)} className="rounded-circle img-fluid" alt="profile" />
           <h1 className="display-4">{info.title}</h1>
           <h2 className="display-4">{info.specializiations}</h2>
           <p className="lead">{info.skillOne}</p>
