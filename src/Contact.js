@@ -1,5 +1,6 @@
 import React from 'react'
 import './contact.css'
+import $ from 'jquery'
 
 
 export class ContactForm extends React.Component {
@@ -19,23 +20,20 @@ export class ContactForm extends React.Component {
 
  handleChange = (e) => {
   let newState = {}
-
   newState[e.target.name] = e.target.value
-
   this.setState(newState)
  }
 
 
- handleSubmit = (e, message) => {
-  e.preventDefault()
+ handleSubmit = (e) => {
+   e.preventDefault()
 
-  let formData = {
-   formSender: this.state.name,
-   formEmail: this.state.email,
-   formSubject: this.state.subject,
-   formMessage: this.state.message
+   var data = {
+   name: this.state.name,
+   email: this.state.email,
+   subject: this.state.subject,
+   message: this.state.message
   }
-
 
   this.setState({
    name: '',
@@ -43,12 +41,31 @@ export class ContactForm extends React.Component {
    subject: '',
    message: ''
   })
+
+  $.ajax({
+    type: "POST",
+    url : "https://horqo73rzk.execute-api.us-east-1.amazonaws.com/prod/contact",
+    dataType: "json",
+    crossDomain: "true",
+    contentType: "application/json; charset=utf-8",
+    data: JSON.stringify(data),
+
+    success: function () {
+      // clear form and show a success message
+      alert("Successfull");
+    },
+    error: function () {
+      // show an error message
+      alert("UnSuccessfull" + JSON.stringify(data));
+    }
+  });
+
  }
 
  render() {
   return(
     <div className="jumbotron jumbotron-fluid paral paralsec2" id="contact">
-      <form className='react-form' onSubmit={this.handleSubmit}>
+      <form className='react-form' method="post" onSubmit={this.handleSubmit}>
        <h1 id='formTitle'>Contact</h1>
 
        <fieldset className='form-group'>
@@ -72,7 +89,7 @@ export class ContactForm extends React.Component {
        </fieldset>
 
        <div className='form-group'>
-         <input id='formButton' className='form-btn' type='submit' placeholder='Send message' />
+         <button id='formButton' className='form-btn' type='submit'>Send</button>
        </div>
       </form>
     </div>
