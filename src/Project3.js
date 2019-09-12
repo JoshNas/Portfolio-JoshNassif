@@ -27,7 +27,7 @@ export const Project3 = () => (
       </div>
     </div>
     <div className="container text-center">
-      <a className="btn btn-social btn-github" data-toggle="modal" data-target=".demo-popup">
+      <a className="btn btn-social btn-github" data-toggle="modal" data-target=".demo-popup" href="#contact">
         <span className="fa fa-github"  id="social-but"></span> GitHub
       </a>
     </div>

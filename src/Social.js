@@ -1,10 +1,6 @@
 import React from 'react'
 import info from "./info/info"
 
-const iconStyle = {
-  verticalAlign: "middle"
-}
-
 export const Social = () => (
       <div className="container text-center" id="social-links">
           <a type="button" className="btn btn-social btn-linkedin" href={info.linkedIn} target="blank">

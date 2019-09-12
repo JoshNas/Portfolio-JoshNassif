@@ -17,7 +17,6 @@ export class App extends Component {
         <ProjectManager />
         <ContactForm />
         <Footer />
-
       </div>
 
     )
