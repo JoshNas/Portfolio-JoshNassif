@@ -100,8 +100,12 @@ color: yellow;
 	padding-bottom: 0px;
 }
 
-#social-but {
+#social-icon {
 	display : flex;
 	align-items : center;
 	justify-content: center;
+}
+
+#social-button {
+  margin: 2px;
 }

@@ -44,7 +44,7 @@ export class ContactForm extends React.Component {
 
   $.ajax({
     type: "POST",
-    url : "https://horqo73rzk.execute-api.us-east-1.amazonaws.com/prod/contact",
+    url : "https://ba8lbixyll.execute-api.us-east-1.amazonaws.com/prod",
     dataType: "json",
     crossDomain: "true",
     contentType: "application/json; charset=utf-8",
@@ -52,11 +52,11 @@ export class ContactForm extends React.Component {
 
     success: function () {
       // clear form and show a success message
-      alert("Successfull");
+      alert('Thanks!');
     },
     error: function () {
       // show an error message
-      alert("UnSuccessfull" + JSON.stringify(data));
+      alert('Something went wrong. Please try again.');
     }
   });
 
