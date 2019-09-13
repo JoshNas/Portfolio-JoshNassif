@@ -43,9 +43,9 @@ export class About extends Component {
           <img src={this.state.originalProfile ? profilepic : profilepicalt} onClick={this.changeProfile.bind(this)} className="rounded-circle img-fluid" alt="profile" />
           <h1 className="display-4">{info.title}</h1>
           <h2 className="display-4">{info.specializiations}</h2>
-          <p className="lead">{info.skillOne}</p>
-          <p onClick={this.changeBackground.bind(this)} className="lead">{info.skillTwo}</p>
-          <p className="lead">{info.skillThree}</p>
+          <p className="lead" id="skills">{info.skillOne}</p>
+          <p className="lead" id="skills">{info.skillTwo}</p>
+          <p className="lead" id="skills">{info.skillThree}</p>
         </div>
       </div>
     )
