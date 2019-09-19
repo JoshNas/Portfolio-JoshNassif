@@ -40,7 +40,9 @@ export const Project3 = () => (
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             </div>
             <div class="modal-body">
-            <p>This repository is not available publicly. If you're considering hiring me and would like more information on how the application works please contact me. Thanks!</p>
+              <p>This complete repository is not available publicly.</p>
+              <a href="https://github.com/JoshNas/Optimizer_Public">Click here to see the data cleaner, solver, and GUI files</a>
+              <p>If you're considering hiring me and would like more information on how the application works please <a href="#contact">contact me</a> Thanks!</p>
             </div>
           </div>
         </div>
