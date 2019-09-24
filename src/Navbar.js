@@ -13,6 +13,15 @@ export class Navbar extends Component {
               <li class="nav-item active"><a class="nav-link" href="#intro">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
               <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Websites
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="https://coffee.joshnassif.com">Coffee Shop</a>
+                  <a class="dropdown-item" href="https://business.joshnassif.com">Small Business</a>
+                </div>
+              </li>
               <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
           </div>
