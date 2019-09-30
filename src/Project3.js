@@ -26,10 +26,10 @@ export const Project3 = () => (
         <ModalImage small={projectThree3} large={projectThreeBig3} className="projectImage"/>
       </div>
     </div>
-    <div className="container text-center">
-      <a className="btn btn-social btn-github" data-toggle="modal" data-target=".demo-popup" href="#contact">
-        <span className="fa fa-github"  id="social-but"></span> GitHub
-      </a>
+    <div className="container text-center" id="social-links">
+        <a className="btn btn-social btn-github" data-toggle="modal" data-target=".demo-popup" href="#contact" id="social-button">
+          <span className="fa fa-github"  id="social-icon"></span> GitHub
+        </a>
     </div>
 
       {/* Modal popup */}

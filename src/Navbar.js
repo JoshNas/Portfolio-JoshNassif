@@ -20,6 +20,7 @@ export class Navbar extends Component {
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" href="https://coffee.joshnassif.com">Coffee Shop</a>
                   <a class="dropdown-item" href="https://business.joshnassif.com">Small Business</a>
+                  <a class="dropdown-item" href="https://books.joshnassif.com">Book Club</a>
                 </div>
               </li>
               <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
