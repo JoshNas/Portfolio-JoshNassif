@@ -7,9 +7,9 @@ const introduction = 'Amazon Web Service Developer specializing in responsive de
 export class Intro extends Component{
   render() {
     return (
-      <div class="jumbotron jumbotron-fluid intro-bg" id="intro">
-        <div class="container text-center">
-          <h1 class="display-3 text-dark">{name}</h1>
+      <div className="jumbotron jumbotron-fluid intro-bg" id="intro">
+        <div className="container text-center">
+          <h1 className="display-3 text-dark">{name}</h1>
           <p>{introduction}</p>
         </div>
       </div>
