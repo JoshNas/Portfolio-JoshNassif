@@ -1,17 +1,18 @@
 import React from 'react'
 import ModalImage from "react-modal-image";
-import info from './info/info'
-import "./style.css";
+import "./projects.css";
 import coffeeLogin from './img/coffeeLogin.png'
 import coffeeOrder from './img/coffeeOrder.png'
 import coffeeLoginBig from './img/coffeeLoginBig.png'
 import coffeeOrderBig from './img/coffeeOrderBig.png'
 
+const projectFour = 'Coffee Shop'
+const projectFourDetails = 'Coffee shop app built with Python, utilizing MySQL for database management and Kivy for user interface. Provides user log in and order input screen. Orders are stored and can be retrived from MySQL database.'
 
 export const Project4 = () => (
   <div className="container">
-    <h3 className="col text-center">{info.projectFour}</h3>
-    <p className="col text-center lead">{info.projectFourDetails}</p>
+    <h3 className="col text-center">{projectFour}</h3>
+    <p className="col text-center lead">{projectFourDetails}</p>
     <div class="row" >
       <div className="col-md-6">
         <ModalImage small={coffeeLogin} large={coffeeLoginBig} className="projectImage"/>

@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './social.css'
 import info from "./info/info"
 
 export const Social = () => (

@@ -21,6 +21,7 @@ form {
  margin-bottom: 3.236rem;
  text-align: center;
  font-size: 1.618rem;
+ color: black;
 }
 
 .form-group {
@@ -100,4 +101,8 @@ textarea {
 }
 .form-btn:focus {
  outline: 0;
+}
+
+.paralsec2 {
+background-image: url('./img/background3.jpg');
 }

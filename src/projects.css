@@ -1,0 +1,32 @@
+/*Jumbotron overrides*/
+.jumbotron{
+    margin-bottom:15px;
+		border-radius: 6px;
+}
+
+#projects {
+	margin-top: 25px;
+	padding: 45px;
+}
+
+#projectRow {
+  padding: 25px;
+}
+
+/* Buttons */
+#learn-more {
+	padding-bottom: 25px;
+}
+
+#social-icon {
+	display : flex;
+	align-items : center;
+	justify-content: center;
+}
+
+/* images */
+.projectImage {
+	max-width: 340px;
+	max-height: 320px;
+	padding-bottom: 20px;
+}

@@ -1,12 +1,21 @@
 import React, { Component} from 'react'
-import "./style.css";
-import info from './info/info'
+import "./projects.css";
 import { Project1 } from "./Project1"
 import { Project2 } from "./Project2"
 import { Project3 } from "./Project3"
 import { Project4 } from "./Project4"
 import { Social } from "./Social"
 
+
+const projectOne = 'Arbitrage Finder'
+const projectTwo = 'Resturant Solutions'
+const projectThree = 'Optimizer'
+const projectFour = 'Coffee Shop'
+
+const projectOneDescription = 'Application that cleans and analyzes data pulled from multiple sources to find profitable oppourtunities in a variety of markets. Utilizes Python to acquire, clean, and combine data then iterates through it to return situations where arbitrage is available.'
+const projectTwoDescription = 'Complete custimizable order system for a restaurant. Employees can log in with assigned PIN and enter orders for tables and guests. Orders are saved in MySQL database with ability to be displayed in multiple locations and provide information to management.'
+const projectThreeDescription = 'Utilizes Google OR-Tools to find optimal solution from thousands of possibilites. The application takes input from user, solve the problem based on the given data and parameters, then return the optimal solution.'
+const projectFourDescription = 'Coffee shop app built with Python, utilizing MySQL for database management and Kivy for user interface.'
 
 export class ProjectManager extends Component{
   constructor () {
@@ -70,34 +79,33 @@ export class ProjectManager extends Component{
       })
     }
 
-
   render() {
     return (
       <div className="jumbotron jumbotron-fluid" id="projects">
         <div className="container text-center" hidden={!this.state.displayMain}>
           <div className="row" id="projectRow">
             <div className="col-lg-6" id="learn-more">
-              <h3 id="project1">{info.projectOne}</h3>
-              <p>{info.projectOneDescription}</p>
+              <h3 id="project1">{projectOne}</h3>
+              <p>{projectOneDescription}</p>
               <button className="btn btn-info" onClick={this.toggleOne.bind(this)}>Learn More</button>
             </div>
 
             <div className="col-lg-6" id="learn-more">
-              <h3>{info.projectTwo}</h3>
-              <p>{info.projectTwoDescription}</p>
+              <h3>{projectTwo}</h3>
+              <p>{projectTwoDescription}</p>
               <button className="btn btn-info" onClick={this.toggleTwo.bind(this)}>Learn More</button>
             </div>
           </div>
 
           <div className='row' id="projectRow">
             <div className="col-lg-6" id="learn-more">
-              <h3>{info.projectThree}</h3>
-              <p>{info.projectThreeDescription}</p>
+              <h3>{projectThree}</h3>
+              <p>{projectThreeDescription}</p>
               <button className="btn btn-info" onClick={this.toggleThree.bind(this)}>Learn More</button>
             </div>
             <div className="col-lg-6" id="learn-more">
-              <h3>{info.projectFour}</h3>
-              <p>{info.projectFourDescription}</p>
+              <h3>{projectFour}</h3>
+              <p>{projectFourDescription}</p>
               <button className="btn btn-info" onClick={this.toggleFour.bind(this)}>Learn More</button>
             </div>
           </div>

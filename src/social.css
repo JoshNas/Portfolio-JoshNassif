@@ -1,0 +1,14 @@
+#social-links {
+	padding-top: 25px;
+	padding-bottom: 0px;
+}
+
+#social-icon {
+	display : flex;
+	align-items : center;
+	justify-content: center;
+}
+
+#social-button {
+  margin: 2px;
+}
