@@ -1,4 +1,5 @@
 import React, { Component} from 'react'
+import { Social } from './Social'
 import profilepic from './img/profile.jpg'
 import profilepicalt from './img/profileCool.jpg'
 import info from './info/info'
@@ -46,6 +47,7 @@ export class About extends Component {
           <p className="lead" id="skills">{info.skillOne}</p>
           <p className="lead" id="skills">{info.skillTwo}</p>
           <p className="lead" id="skills">{info.skillThree}</p>
+          <Social />
         </div>
       </div>
     )

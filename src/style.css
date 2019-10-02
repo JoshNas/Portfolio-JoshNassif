@@ -1,25 +1,8 @@
-.projectImage {
-	border-radius: 8px;
-	max-width: 340px;
-	max-height: 320px;
-	padding-bottom: 20px;
-}
-
-.emphasized {
-	font-weight: bold;
-	font-size: 40px;
-}
-
-.clickp:hover {
-	cursor: pointer;
-	color:#DAE9F8;
-}
-
 /*Jumbotron overrides*/
 .jumbotron{
     margin-bottom:15px;
 		border-radius: 6px;
-          }
+}
 
 /*Background images (Non-Parallax)*/
 .intro-bg {
@@ -67,6 +50,33 @@ background-image: url('./img/background2.jpg');}
 .paralsec2 {
 background-image: url('./img/background3.jpg');
 }
+
+/*Project Manager*/
+#projects {
+	margin-top: 25px;
+	padding: 45px;
+}
+
+#projectRow {
+  padding: 25px;
+}
+
+.projectImage {
+	max-width: 340px;
+	max-height: 320px;
+	padding-bottom: 20px;
+}
+
+.emphasized {
+	font-weight: bold;
+	font-size: 40px;
+}
+
+.clickp:hover {
+	cursor: pointer;
+	color:#DAE9F8;
+}
+
 
 /* Contact Form */
 #formTitle {

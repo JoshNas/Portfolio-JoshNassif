@@ -10,9 +10,8 @@ export class Navbar extends Component {
           </button>
           <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active"><a class="nav-link" href="#intro">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+              <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Websites
@@ -23,7 +22,7 @@ export class Navbar extends Component {
                   <a class="dropdown-item" href="https://books.joshnassif.com">Book Club</a>
                 </div>
               </li>
-              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
             </ul>
           </div>
         </div>
