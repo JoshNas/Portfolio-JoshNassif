@@ -2,10 +2,8 @@ import React from 'react'
 import ModalImage from "react-modal-image";
 import "./projects.css";
 import projectTwo1 from './img/projectTwo1.png'
-import projectTwo2 from './img/projectTwo2.png'
 import projectTwo3 from './img/projectTwo3.png'
 import projectTwoBig1 from './img/projectTwoBig1.png'
-import projectTwoBig2 from './img/projectTwoBig2.png'
 import projectTwoBig3 from './img/projectTwoBig3.png'
 
 const projectTwo = 'Resturant Solutions'

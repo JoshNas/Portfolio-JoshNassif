@@ -1,5 +1,5 @@
 import React, { Component} from 'react'
-import { Social } from './Social'
+import { Social } from '../Social'
 import './about.css'
 import profilepic from './img/profile.jpg'
 import profilepicalt from './img/profileCool.jpg'

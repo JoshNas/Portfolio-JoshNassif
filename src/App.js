@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import{ Navbar} from './Navbar'
-import { Home } from './Home'
-import { ContactApp } from './ContactApp'
-import { ProjectManager } from "./ProjectManager"
-import { Footer } from './Footer'
+import{ Navbar} from './Components/Navbar'
+import { Home } from './Components/HomePage/Home'
+import { ContactApp } from './Components/ContactMe/ContactApp'
+import { ProjectManager } from "./Components/Projects/ProjectManager"
+import { Footer } from './Components/Footer'
 
 
 export class App extends Component {

@@ -1,5 +1,4 @@
 import React, { Component} from 'react'
-import info from './info/info'
 import "./intro.css"
 
 const name = 'JOSH NASSIF'
