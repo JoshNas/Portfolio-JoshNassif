@@ -13,13 +13,13 @@ export class Navbar extends Component {
               <li className="nav-item active"><a className="nav-link" href="/">Home</a></li>
               <li className="nav-item"><a className="nav-link" href="/projects">Projects</a></li>
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button className="btn btn-link nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Websites
-                </a>
+                </button>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a className="dropdown-item" href="https://coffee.joshnassif.com">Coffee Shop</a>
-                  <a className="dropdown-item" href="https://business.joshnassif.com">Small Business</a>
-                  <a className="dropdown-item" href="https://books.joshnassif.com">Book Club</a>
+                  <a className="dropdown-item" target="blank" href="https://coffee.joshnassif.com">Coffee Shop</a>
+                  <a className="dropdown-item" target="blank" href="https://business.joshnassif.com">Small Business</a>
+                  <a className="dropdown-item" target="blank" href="https://books.joshnassif.com">Book Club</a>
                 </div>
               </li>
               <li className="nav-item"><a className="nav-link" href="/contact">Contact</a></li>
