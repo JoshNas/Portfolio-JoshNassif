@@ -3,6 +3,7 @@ import './contact.css'
 
 import $ from 'jquery'
 
+const apiURL = ''
 
 export class ContactForm extends React.Component {
  constructor(props) {
@@ -45,7 +46,7 @@ export class ContactForm extends React.Component {
 
   $.ajax({
     type: "POST",
-    url : "https://ba8lbixyll.execute-api.us-east-1.amazonaws.com/prod",
+    url : apiURL,
     dataType: "json",
     crossDomain: "true",
     contentType: "application/json; charset=utf-8",
