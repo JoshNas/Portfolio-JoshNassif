@@ -2,7 +2,7 @@ import React, { Component} from 'react'
 import { Social } from '../Social'
 import './about.css'
 import profilepic from './img/profile.jpg'
-import profilepicalt from './img/profileCool.jpg'
+import profilepicalt from './img/profileAlt.png'
 import background from './img/background2.jpg'
 import backgroundAlt from './img/background2Alt.gif'
 
