@@ -4,6 +4,8 @@ import { Project1 } from "./Project1"
 import { Project2 } from "./Project2"
 import { Project3 } from "./Project3"
 import { Project4 } from "./Project4"
+import { Business } from "./Business"
+import { Coffee } from "./Coffee"
 import { Social } from "../Social"
 
 
@@ -109,6 +111,20 @@ export class ProjectManager extends Component{
               <button className="btn btn-info" onClick={this.toggleFour.bind(this)}>Learn More</button>
             </div>
           </div>
+
+          <div className='row' id="projectRow">
+            <div className="col-lg-6" id="learn-more">
+              <Business />
+            </div>
+            <div className="col-lg-6" id="learn-more">
+              <Coffee />
+            </div>
+          </div>
+
+
+
+
+
           {this.state.displayMain && <Social />}
         </div>
 
