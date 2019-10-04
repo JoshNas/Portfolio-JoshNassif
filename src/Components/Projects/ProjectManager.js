@@ -4,20 +4,28 @@ import { Project1 } from "./Project1"
 import { Project2 } from "./Project2"
 import { Project3 } from "./Project3"
 import { Project4 } from "./Project4"
-import { Business } from "./Business"
-import { Coffee } from "./Coffee"
 import { Social } from "../Social"
+import businessIMG from './img/BusinessSite.png'
+import coffeeIMG from './img/CoffeeSite.png'
 
 
 const projectOne = 'Arbitrage Finder'
 const projectTwo = 'Resturant Solutions'
 const projectThree = 'Optimizer'
 const projectFour = 'Coffee Shop'
+const projectBusiness = 'Business Website'
+const projectCoffee = 'Coffee Website'
 
 const projectOneDescription = 'Application that cleans and analyzes data pulled from multiple sources to find profitable oppourtunities in a variety of markets. Utilizes Python to acquire, clean, and combine data then iterates through it to return situations where arbitrage is available.'
 const projectTwoDescription = 'Complete custimizable order system for a restaurant. Employees can log in with assigned PIN and enter orders for tables and guests. Orders are saved in MySQL database with ability to be displayed in multiple locations and provide information to management.'
 const projectThreeDescription = 'Utilizes Google OR-Tools to find optimal solution from thousands of possibilites. The application takes input from user, solve the problem based on the given data and parameters, then return the optimal solution.'
 const projectFourDescription = 'Coffee shop app built with Python, utilizing MySQL for database management and Kivy for user interface.'
+const projectBusinessDetails = 'React.js website designed for business.'
+const projectCoffeeDetails = 'React.js website designed for coffee shop.'
+
+const urlBusiness = "https://business.joshnassif.com"
+const urlCoffee = "https://coffee.joshnassif.com"
+
 
 export class ProjectManager extends Component{
   constructor () {
@@ -84,59 +92,78 @@ export class ProjectManager extends Component{
   render() {
     return (
       <div className="jumbotron jumbotron-fluid" id="projects">
-        <div className="container text-center" hidden={!this.state.displayMain}>
-          <div className="row" id="projectRow">
-            <div className="col-lg-6" id="learn-more">
-              <h3 id="project1">{projectOne}</h3>
-              <p>{projectOneDescription}</p>
-              <button className="btn btn-info" onClick={this.toggleOne.bind(this)}>Learn More</button>
+        {/* Begin main container */}
+        <div hidden={!this.state.displayMain}>
+          <div className="d-flex flex-column justify-content-around">
+            {/* Begin row one */}
+            <div class="d-flex flex-row" id="learn-more">
+              <div className="col-lg-6 text-center">
+                <h3>{projectOne}</h3>
+                <p>{projectOneDescription}</p>
+                <button className="btn btn-info" onClick={this.toggleOne.bind(this)}>Learn More</button>
+              </div>
+              <div className="col-lg-6 text-center">
+                <h3>{projectTwo}</h3>
+                <p>{projectTwoDescription}</p>
+                <button className="btn btn-info" onClick={this.toggleTwo.bind(this)}>Learn More</button>
+              </div>
             </div>
+            {/* End row one */}
 
-            <div className="col-lg-6" id="learn-more">
-              <h3>{projectTwo}</h3>
-              <p>{projectTwoDescription}</p>
-              <button className="btn btn-info" onClick={this.toggleTwo.bind(this)}>Learn More</button>
+            {/* Begin row two */}
+            <div class="d-flex flex-row" id="learn-more">
+              <div className="col-lg-6 text-center">
+                <h3>{projectThree}</h3>
+                <p>{projectThreeDescription}</p>
+                <button className="btn btn-info" onClick={this.toggleThree.bind(this)}>Learn More</button>
+              </div>
+              <div className="col-lg-6 text-center">
+                <h3>{projectFour}</h3>
+                <p>{projectFourDescription}</p>
+                <button className="btn btn-info" onClick={this.toggleFour.bind(this)}>Learn More</button>
+              </div>
             </div>
+            {/* End row two */}
+
+            {/* Begin row three */}
+            <div class="d-flex flex-row flex-wrap" id="learn-more">
+              <div className="col-lg-6 text-center">
+                <a href={urlBusiness} target="blank" id="link"><h3>{projectBusiness}</h3></a>
+                <p>{projectBusinessDetails}</p>
+                <a href={urlBusiness} target="blank">
+                  <img className="img-fluid" src={businessIMG} alt={urlBusiness} id="siteImage"/>
+                </a>
+              </div>
+              <div className="col-lg-6 text-center">
+                <a href={urlCoffee} target="blank" id="link"><h3>{projectCoffee}</h3></a>
+                <p>{projectCoffeeDetails}</p>
+                <a href={urlCoffee} target="blank">
+                  <img className="img-fluid" src={coffeeIMG} alt={urlCoffee} id="siteImage"/>
+                </a>
+              </div>
+            </div>
+            {/* End row three */}
+
+
+            {this.state.displayMain && <Social />}
           </div>
 
-          <div className='row' id="projectRow">
-            <div className="col-lg-6" id="learn-more">
-              <h3>{projectThree}</h3>
-              <p>{projectThreeDescription}</p>
-              <button className="btn btn-info" onClick={this.toggleThree.bind(this)}>Learn More</button>
-            </div>
-            <div className="col-lg-6" id="learn-more">
-              <h3>{projectFour}</h3>
-              <p>{projectFourDescription}</p>
-              <button className="btn btn-info" onClick={this.toggleFour.bind(this)}>Learn More</button>
-            </div>
-          </div>
-
-          <div className='row' id="projectRow">
-            <div className="col-lg-6" id="learn-more">
-              <Business />
-            </div>
-            <div className="col-lg-6" id="learn-more">
-              <Coffee />
-            </div>
-          </div>
-
-
-
-
-
-          {this.state.displayMain && <Social />}
         </div>
+        {/* End main container */}
 
+        {/* Toggle view to individual project */}
         {this.state.displayOne && <Project1 />}
         {this.state.displayTwo && <Project2 />}
         {this.state.displayThree && <Project3 />}
         {this.state.displayFour && <Project4 />}
 
-        <div className="col text-center"><button className="btn btn-default btn-lg" onClick={this.toggleMain.bind(this)} hidden={this.state.learnMore}>Back</button></div>
-
+        {/* Return to main display */}
+        <div className="col text-center">
+          <button className="btn btn-default btn-lg" onClick={this.toggleMain.bind(this)} hidden={this.state.learnMore}>Back</button>
+        </div>
 
       </div>
+
     )
   }
 }

@@ -15,7 +15,7 @@
 
 /* Buttons */
 #learn-more {
-	padding-bottom: 25px;
+	padding-bottom: 55px;
 }
 
 #social-icon {
@@ -32,8 +32,11 @@
 }
 
 #siteImage {
-
 	max-height: 320px;
 	padding-bottom: 20px;
 
+}
+
+#link {
+  color: #212529;
 }
