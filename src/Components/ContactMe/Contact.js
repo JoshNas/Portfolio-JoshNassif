@@ -1,10 +1,9 @@
-import React from 'react'
+import React ,{ Component} from 'react'
 import './contact.css'
-
 import $ from 'jquery'
 
 
-export class ContactForm extends React.Component {
+export class ContactForm extends Component {
  constructor(props) {
   super(props)
 
