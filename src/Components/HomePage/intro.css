@@ -1,6 +1,6 @@
 .intro-bg {
 	background-image: url('./img/background.jpg');
-	min-height: 600px;
+	min-height: 560px;
 	height: 100%;
 	/* Center and scale the image nicely */
 	background-position: center;
