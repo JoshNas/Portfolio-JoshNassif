@@ -15,16 +15,16 @@
 /* Paragrapgh for Parallax Section */
 .paral p {
   color: white;
-	text-shadow: 2px 2px 4px #000000;
+	text-shadow: 18px 18px 88px #000000;
   text-align: center;
   line-height: 60px;
   font-size: 175%;
 }
 
 /* Heading for Parallax Section */
-.paral h1, h2 {
+.about h1, h2 {
   color: white;
-	text-shadow: 2px 2px 4px #000000;
+	text-shadow: 3px 3px 4px #000000;
 }
 
 /* Image for Parallax Section */
