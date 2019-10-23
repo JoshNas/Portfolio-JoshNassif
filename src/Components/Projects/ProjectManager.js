@@ -8,6 +8,7 @@ import { Social } from "../Social"
 import businessIMG from './img/businessSite.png'
 import coffeeIMG from './img/coffeeSite.png'
 import booksIMG from './img/booksSite.png'
+import pastryIMG from './img/pastrySite.png'
 
 
 const projectOne = 'Arbitrage Finder'
@@ -17,6 +18,7 @@ const projectFour = 'Coffee Shop'
 const projectBusiness = 'Business Website'
 const projectCoffee = 'Coffee Website'
 const projectBooks = 'Social Books'
+const projectPastries = "Aubrey's Pastries"
 
 const projectOneDescription = 'Application that cleans and analyzes data pulled from multiple sources to find profitable oppourtunities in a variety of markets. Utilizes Python to acquire, clean, and combine data then iterates through it to return situations where arbitrage is available.'
 const projectTwoDescription = 'Complete custimizable order system for a restaurant. Employees can log in with assigned PIN and enter orders for tables and guests. Orders are saved in MySQL database with ability to be displayed in multiple locations and provide information to management.'
@@ -25,10 +27,12 @@ const projectFourDescription = 'Coffee shop app built with Python, utilizing MyS
 const projectBusinessDetails = 'React.js website designed for business. Built with React Router, jQuery, and Ajax. '
 const projectCoffeeDetails = 'React.js website designed for coffee shop. Utilizing API Gateway and Lambda for contact.'
 const projectBooksDetails = 'Signup and Log in with Amazon Cognito to track your reading progress! User data is securely stored and retrieved from DynamoDB. Additionally, each user has a private S3 bucket to which photos can be uploaded.'
+const projectPastriesDetails = 'Single page site designed for a bakery Aubrey runs out of her home. Beautifully displays her pastries across all browsers and mobile! Allows here customers to contact her to place orders online.'
 
-const urlBusiness = "https://business.joshnassif.com"
+const urlBusiness = "https://breesydev.com"
 const urlCoffee = "https://coffee.joshnassif.com"
 const urlBooks = "https://books.joshnassif.com"
+const urlPastries = "https://aubreyspastries.breesydev.com/"
 
 
 export class ProjectManager extends Component{
@@ -159,7 +163,11 @@ export class ProjectManager extends Component{
                 </a>
               </div>
               <div className="col-lg-6 text-center">
-
+                <a href={urlPastries} target="blank" id="link"><h3>{projectPastries}</h3></a>
+                <p>{projectPastriesDetails}</p>
+                <a href={urlPastries} target="blank">
+                  <img className="img-fluid" src={pastryIMG} alt={urlPastries} id="siteImage"/>
+                </a>
               </div>
             </div>
             {/* End row four */}
